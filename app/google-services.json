@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "919800136165",
+    "firebase_url": "https://skillindia-450a3.firebaseio.com",
+    "project_id": "skillindia-450a3",
+    "storage_bucket": "skillindia-450a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919800136165:android:c2ca18935e8cc453a6af0c",
+        "android_client_info": {
+          "package_name": "com.example.skillindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919800136165-tp7a12qpun50i2l7hnihcbnm5j3l4an4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCPkk0lMOPwz6jx4q_i0ZFuz6qVb2gCSs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919800136165-tp7a12qpun50i2l7hnihcbnm5j3l4an4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
