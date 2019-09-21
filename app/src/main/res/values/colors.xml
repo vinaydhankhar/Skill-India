@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#157DE6</color>
+    <color name="colorPrimaryDark">#000a57</color>
+    <color name="colorAccent">#5d61e1</color>
+
+    <color name="facebookBlue">#3F5996</color>
+    <color name="twitterBlue">#29C5F6</color>
+    <color name="googleRed">#D03E2F</color>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="editTextBG">#DADADA</color>
+
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="textColor">#6e6e6e</color>
 </resources>
