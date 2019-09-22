@@ -32,9 +32,13 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.auth.User;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Registeract extends AppCompatActivity {
  private static final String TAG = "Registeract";
@@ -324,10 +328,15 @@ public class Registeract extends AppCompatActivity {
 
    // [START basic_write]
    private void writeNewUser(String userId, String username, String name, String phone) {
-      UserInformation user = new UserInformation(username, name, phone);
+      UserInformation user = new UserInformation();
    Log.i(TAG,"here in writing new user"+user+username+phone);
 
-      mDatabase.child("users").child(userId).setValue(user);
+       mDatabase = mDatabase.child("users");
+       Map<String, UserInformation> users = new HashMap<>();
+       users.put(userId, new UserInformation(username, name, phone));
+
+       mDatabase.setValue(users);
+
       //sendEmailVerification();
       //uploadto stporage
       uploadFile();

@@ -12,32 +12,32 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_profile"
         android:name="com.example.skillindia.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/profile" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_interest"
         android:name="com.example.skillindia.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/MyInterest" />
 
     <fragment
-        android:id="@+id/nav_tools"
+        android:id="@+id/nav_support"
         android:name="com.example.skillindia.ui.tools.ToolsFragment"
         android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/about" />
 
     <fragment
-        android:id="@+id/nav_share"
+        android:id="@+id/nav_about"
         android:name="com.example.skillindia.ui.share.ShareFragment"
         android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        tools:layout="@layout/support" />
 
     <fragment
-        android:id="@+id/nav_send"
+        android:id="@+id/nav_logout"
         android:name="com.example.skillindia.ui.send.SendFragment"
         android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/logout" />
 </navigation>

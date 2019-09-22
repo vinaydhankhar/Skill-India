@@ -158,7 +158,7 @@
                         />
 
                     <TextView
-                        android:text="Dancing"
+                        android:text="Maths"
                         android:textAlignment="center"
                         android:layout_gravity="center"
                         android:textColor="@android:color/black"
@@ -199,7 +199,7 @@
                         android:layout_height="wrap_content" />
 
                     <TextView
-                        android:text="Singing"
+                        android:text="Physics"
                         android:textAlignment="center"
                         android:layout_gravity="center"
                         android:textColor="@android:color/black"
@@ -243,7 +243,7 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="Science"
+                        android:text="Chemistry"
                         android:textAlignment="center"
                         android:layout_gravity="center"
                         android:textColor="@android:color/black"
@@ -284,7 +284,7 @@
                         />
 
                     <TextView
-                        android:text="Fine Arts"
+                        android:text="Biology"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
                         android:layout_gravity="center"

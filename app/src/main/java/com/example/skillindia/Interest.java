@@ -36,12 +36,12 @@ public class Interest extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference().child("users").child(firebaseUser.getUid());
         interests = new ArrayList<String>(6);
         ans = new ArrayList<String>();
-        interests.add("computer");
-        interests.add("cricket");
-        interests.add("maths");
-        interests.add("physics");
-        interests.add("chemistry");
-        interests.add("biology");
+        interests.add("Technology");
+        interests.add("Sports");
+        interests.add("Dancing");
+        interests.add("Singing");
+        interests.add("Science");
+        interests.add("Fine arts");
         //set Event
 
         setToggleEvent(mainGrid);

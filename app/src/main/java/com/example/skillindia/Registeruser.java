@@ -13,6 +13,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.auth.User;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Registeruser extends AppCompatActivity {
     GridLayout mainGrid;
@@ -26,7 +30,7 @@ public class Registeruser extends AppCompatActivity {
 
         mAuth=FirebaseAuth.getInstance();
         firebaseUser=mAuth.getCurrentUser();
-        databaseReference= FirebaseDatabase.getInstance().getReference();
+        databaseReference = FirebaseDatabase.getInstance().getReference().child("users").child(firebaseUser.getUid());
 
 
         TextView tv;
@@ -58,14 +62,21 @@ public class Registeruser extends AppCompatActivity {
                     //Toast.makeText(RegisterUser.this,"clicked at index"+f,Toast.LENGTH_SHORT).show();
                     if(f==0)
                     {
-                        //student
-                        databaseReference.child("users").child(firebaseUser.getUid()).child("userType").setValue("student");
+                        //OS
 
+
+                      //  databaseReference.child("userType").setValue("ts");
                     }
                     else {
-                        //counsell
 
-                        databaseReference.child("users").child(firebaseUser.getUid()).child("userType").setValue("counsellor");
+                       /* databaseReference=databaseReference.child("users").child(firebaseUser.getUid());
+
+                        Map<String, Object>Updates = new HashMap<>();
+                        Updates.put("userType", "ts");
+
+                        databaseReference.updateChildren(Updates);*/
+
+                        //databaseReference.child("userType").setValue("os");
 
                     }
                     startActivity(new Intent(v.getContext(),Interest.class));

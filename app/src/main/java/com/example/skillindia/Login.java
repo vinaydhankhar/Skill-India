@@ -37,15 +37,7 @@ public class Login extends AppCompatActivity {
         authStateListener=new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user=firebaseAuth.getCurrentUser();
-                if(user!=null){
-                    Toast.makeText(Login.this, "User logged in ", Toast.LENGTH_SHORT).show();
-                    Intent I = new Intent(Login.this, Registeruser.class);
-                    startActivity(I);
-                }
-                else{
-                    Toast.makeText(Login.this, "Login to continue", Toast.LENGTH_SHORT).show();
-                }
+
             }
         };
         signup.setOnClickListener(new View.OnClickListener() {
@@ -81,7 +73,7 @@ public class Login extends AppCompatActivity {
                                         Toast.LENGTH_SHORT).show();
                             }
                             else{
-                                startActivity(new Intent(Login.this, Registeruser.class));
+                                startActivity(new Intent(Login.this, HomePage.class));
                             }
                         }
                     });
@@ -91,5 +83,19 @@ public class Login extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser user=firebaseAuth.getCurrentUser();
+        if(user!=null){
+            Toast.makeText(Login.this, "User logged in ", Toast.LENGTH_SHORT).show();
+            Intent I = new Intent(Login.this, HomePage.class);
+            startActivity(I);
+        }
+        else{
+            Toast.makeText(Login.this, "Login to continue", Toast.LENGTH_SHORT).show();
+        }
     }
 }
